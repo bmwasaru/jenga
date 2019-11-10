@@ -11,7 +11,7 @@ class ContactGroupForm(forms.ModelForm):
 
     class Meta:
         model = Contact_Group
-        fields = ('name', )
+        fields = ('name',)
 
 
 class ContactForm(forms.ModelForm):
@@ -20,8 +20,8 @@ class ContactForm(forms.ModelForm):
     mobile = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'form-control'}))
     category = forms.ModelMultipleChoiceField(
-        widget = forms.CheckboxSelectMultiple,
-        queryset = None)
+        widget=forms.CheckboxSelectMultiple,
+        queryset=None)
 
     class Meta:
         model = Contact
@@ -30,6 +30,7 @@ class ContactForm(forms.ModelForm):
     def __init__(self, user, *args, **kwargs):
         super(ContactForm, self).__init__(*args, **kwargs)
         self.fields['category'].queryset = Contact_Group.objects.filter(user=user)
+
 
 # BaseContactFormSet = modelformset_factory(Contact, form=ContactForm, extra=4, can_delete=True)
 

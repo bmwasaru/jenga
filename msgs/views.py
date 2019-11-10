@@ -50,8 +50,8 @@ def sms_create(request):
                         status = recipient['status']
                         cost = recipient['cost']
                         instance = Sms.objects.create(user=user,
-                                        message=message, number=number,
-                                        messageId=messageId, status=status, cost=cost)
+                                                      message=message, number=number,
+                                                      messageId=messageId, status=status, cost=cost)
                         instance.category.set(category_name)
                 except AfricasTalkingGatewayException as e:
                     messages.warning(request, 'Encountered an error while sending message')

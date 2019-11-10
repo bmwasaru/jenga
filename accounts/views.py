@@ -22,10 +22,10 @@ def login_view(request):
             if user:
                 messages.success(request, u'Your have successfully logged in!.')
                 login(request, user)
-                return redirect('sms_create')# Redirect to a success page.
+                return redirect('sms_create')  # Redirect to a success page.
         else:
             messages.error(request, u'Invalid Login!')
-    return render(request, 'login.html', {'form': form })
+    return render(request, 'login.html', {'form': form})
 
 
 def signup(request):
