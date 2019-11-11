@@ -12,7 +12,7 @@ class Contact_Group(models.Model):
     # contacts = models.OneToManyField('Contact')
 
     class Meta:
-        db_table = 'groups'
+        db_table = 'contacts_groups'
         ordering = ('name',)
         verbose_name = _('group')
         verbose_name_plural = _('groups')
