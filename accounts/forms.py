@@ -54,23 +54,10 @@ class ProfileForm(forms.ModelForm):
         widget=forms.EmailInput(attrs={'class': 'form-control'}),
         max_length=254,
         required=False)
-    africastalking_api_key = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'}),
-        max_length=256,
-        required=False)
-    africastalking_username = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'}),
-        max_length=128,
-        required=False)
-    africastalking_sender_id = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control'}),
-        max_length=128,
-        required=False)
 
     class Meta:
         model = Profile
-        fields = ['institution', 'location', 'public_email',
-                  'africastalking_api_key', 'africastalking_username', 'africastalking_sender_id']
+        fields = ['institution', 'location', 'public_email']
 
     def save(self, *args, **kwargs):
         u = self.instance.user
