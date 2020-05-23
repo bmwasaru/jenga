@@ -1,8 +1,8 @@
-# README #
+# Jenga #
 
 ### What is this repository for? ###
 
-* The project is about sending messages to multiple recipients (bulk sms)
+* Software to power your organizations, campaigns, and movements. This is a fork of work we started while I (Britone) was still at Swahilipot Hub.
 
 ### How do I get set up? ###
 
@@ -16,21 +16,3 @@
 * Create a `secrets.py` file on the same directory as `settings.py` and add the following
 * Run `python manage.py migrate`
 * Run `python manage.py runserver`
-
-### To Do List ###
-
-* Project documentation
-* Add email backend - Ziri
-* Add search functionality
-* Admin dashboard - for charts, graphs
-* import contacts from csv, excel
-
-### Issues ###
-
-* Caching
-* Redirect to contact group creation when nono exists
-
-### Who do I talk to? ###
-
-* Repo owner/admin @athmanziri, @bmwasaru
-* Team contacts @ckchivatsi
