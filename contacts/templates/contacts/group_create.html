@@ -16,6 +16,13 @@
                         {% for error in form.name.errors %}{{ error }}{% endfor %}
                       </span>
                     {% endif %}
+                    <label>Group Description</label>
+                    {{ form.description }}
+                    {% if form.description.errors %}
+                      <span class="help-block">
+                        {% for error in form.description.errors %}{{ error }}{% endfor %}
+                      </span>
+                    {% endif %}
                 </div>
 
                 <button type="submit" class="btn btn-success btn-round">Add Group</button>

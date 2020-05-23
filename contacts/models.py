@@ -8,6 +8,7 @@ from django.utils.translation import ugettext as _
 class Contact_Group(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
+    description = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     # contacts = models.OneToManyField('Contact')
 

@@ -8,10 +8,12 @@ from .models import Contact, Contact_Group
 class ContactGroupForm(forms.ModelForm):
     name = forms.CharField(widget=forms.TextInput(
         attrs={'class': 'form-control'}))
+    description = forms.CharField(widget=forms.Textarea(
+        attrs={'class': 'form-control'}))
 
     class Meta:
         model = Contact_Group
-        fields = ('name',)
+        fields = ('name', 'description',)
 
 
 class ContactForm(forms.ModelForm):
