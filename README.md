@@ -2,7 +2,7 @@
 
 ### What is this repository for? ###
 
-* Software to power your organizations, campaigns, and movements. This is a fork of work we started while I (Britone) was still at Swahilipot Hub.
+* Software to power your organizations, campaigns, and movements.
 
 ### How do I get set up? ###
 
