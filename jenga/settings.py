@@ -20,8 +20,6 @@ DEBUG = os.environ.get('DEBUG')
 # Application definition
 
 INSTALLED_APPS = [
-    # 'jet.dashboard',
-    # 'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -34,12 +32,9 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'import_export',
-
     'contacts',
     'msgs',
     'accounts',
-
-
 ]
 
 MIDDLEWARE = [
