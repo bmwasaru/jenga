@@ -1,4 +1,4 @@
-from sms.settings import *
+from jenga.settings import *
 
 DATABASES = {
     'default': {
